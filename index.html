@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+</head>
+<body>
+  <nav class="zone blue sticky">
+      <ul class="main-nav">
+          <li>
+            <a href="">About Us
+            </a>           
+            </li>
+          <li>
+            <a href="">Services
+            </a>       
+            </li>
+          <li>
+            <a href="">Our Team
+            </a>
+            </li>
+          <li class="push">
+            <a href="">Contact Us
+            </a>
+            </li>
+  </ul>
+  </nav>
+  <div class="container">
+      <img class="cover" src="https://raw.githubusercontent.com/assafelovic/Basic-Landing-Page-Layout/master/img/cover.jpg">
+      <div class="coverText"><h1>Landing Page</h1></div>
+  </div>
+  <div class="zone blue grid-wrapper">
+      <div class="card zone">
+          <img src="https://raw.githubusercontent.com/assafelovic/Basic-Landing-Page-Layout/master/img/startup1.jpg">
+          <div class="text">
+              <h1>What we do</h1>
+              <p>Take a peek on what we do</p>
+              <button>Learn more</button>
+          </div>
+      </div>
+    <div class="card zone"><img src="https://tse2.mm.bing.net/th?id=OIP.hCeLyvh-tTogv08exuTrYwHaEQ&pid=Api&P=0&h=180">
+        <div class="text">
+            <h1>User Experience</h1>
+            <p>Sharing Idea</p>
+            <button>Learn more</button>
+        </div>
+    </div>
+    <div class="card zone"><img src="https://images.squarespace-cdn.com/content/v1/57ad8de5ff7c50d12ce76b68/1595429263897-4FY7ZDPHZWGG7DDQQLM1/ke17ZwdGBToddI8pDm48kOggE0Ch6pMGalwtLMqzsSB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ufo5RWkg_J4of0jUNHaDHx6pZKBvpVYzidBWCapg0tuoMuEaB2HPGSYDV-11UTcW2g/Engage-285.jpg">
+        <div class="text">
+            <h1>Creative Design</h1>
+            <p>We believe in working together</p>
+            <button>Learn more</button>
+        </div>
+    </div>
+  </div>
+  <footer class="zone"><p>2024 yash wagh All right reserved.</p></footer>
+</div>
+</body>
+</html>
+
+<style>
+    body {
+    margin: 0 auto;
+    font-family: Helvetica;
+}
+
+.zone {
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.main-nav {
+    /* creates a */
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+a:hover {
+    color: #686de0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+
+.push {
+    margin-left: auto;
+}
+
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
+
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+ 
+.container {
+ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cover {
+    width:100%;
+    height:100%;
+}
+
+
+.coverText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+.coverText > h1 {
+    color: white;
+    font-size: 40px;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+
+.card {
+    background-color: #444;
+    margin: 50px;
+}
+
+
+
+.card > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+
+.card > .text {
+    padding: 0 20px 20px;
+}
+
+
+button {
+    cursor: pointer;
+    background: gray;
+    border: 0;
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #686de0;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #30336b;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+.blue {
+    background: #2d3436;
+}
+</style>
